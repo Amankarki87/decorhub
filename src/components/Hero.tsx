@@ -11,7 +11,7 @@ export default function Hero() {
   return (
     <section className="max-w-[1260px] w-full pt-[60px] mx-auto">
       <div className="grid grid-cols-12 gap-6 md:gap-10 lg:gap-14">
-        <div className="col-span-12 lg:col-span-6 px-4 sm:px-6">
+        <div className="col-span-12 lg:col-span-6 px-4 sm:px-6 xl:px-0">
           <h1 className="text-[32px] leading-[140%] md:text-5xl md:leading-[130%] lg:text-[64px] lg:leading-[120%] font-bold lg:whitespace-pre-line text-center md:text-left mb-4">
             {hero.heading}
           </h1>

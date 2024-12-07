@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import HorizontalCardList from "@/components/HorizontalCardList";
+import ProductCardList from "@/components/ProductCardList";
 
 const horizontalCard = [
   {
@@ -27,6 +28,7 @@ export default function Home() {
     <div>
       <Hero />
       <HorizontalCardList horizontalCards={horizontalCard} />
+      <ProductCardList />
     </div>
   );
 }
