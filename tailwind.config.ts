@@ -10,7 +10,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        gray: "#999999",
+        "gray-primary": "var(--gray-primary)",
+        "gray-secondary": "var(--gray-secondary)",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
@@ -59,7 +60,7 @@ export default {
       },
       fontFamily: {
         inter: ["var(--font-sans)"],
-        rubik: ["var(--font-rubik"],
+        rubik: ["var(--font-rubik)"],
       },
     },
   },
