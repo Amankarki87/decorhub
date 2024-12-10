@@ -38,6 +38,7 @@ body {
     --gray-secondary: #999999;
     --gray-fiftieth-shade: #505050;
     --white-smoke: #f5f5f5f5;
+    --electric-orange: #f73308;
   }
   .dark {
     --background: 240 10% 3.9%;

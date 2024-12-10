@@ -4,21 +4,21 @@ import React from "react";
 
 interface IProductCardProps {
   className?: string;
-  //   imgSrc: string;
-  //   title: string;
+  imgSrc: string;
+  title: string;
 }
 
 export default function ProductCard({
   className,
-}: //   imgSrc,
-//   title,
-Readonly<IProductCardProps>) {
+  imgSrc,
+  title,
+}: Readonly<IProductCardProps>) {
   return (
     <div className={cn("flex flex-col", className)}>
       <div className="bg-white-smoke px-3 pt-3">
         <Image
-          src="/images/fabric-chair.png"
-          alt="fabric chair"
+          src={imgSrc}
+          alt={title}
           width={270}
           height={300}
           className="object-cover w-full h-full object-center"

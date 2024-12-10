@@ -14,6 +14,7 @@ export default {
         "gray-secondary": "var(--gray-secondary)",
         "white-smoke": "var(--white-smoke)",
         "gray-fiftieth-shade": "var(--gray-fiftieth-shade)",
+        "electric-orange": "var(--electric-orange)",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
