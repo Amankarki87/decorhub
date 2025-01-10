@@ -1,12 +1,13 @@
 import Hero from "@/components/Hero";
 import HorizontalCardList from "@/components/HorizontalCardList";
 import ProductListTab from "@/components/ProductListTab";
+import TwoColumnLayout from "@/components/TwoColumnLayout";
 
 const horizontalCard = [
   {
-    heading: "dining tables",
+    heading: "Bamboo Wood Venner",
     btnHref: "/",
-    imgSrc: "/images/table.png",
+    imgSrc: "/images/bamboo-wood-venner.png",
     imgAlt: "dining table",
   },
   {
@@ -29,6 +30,7 @@ export default function Home() {
       <Hero />
       <HorizontalCardList horizontalCards={horizontalCard} />
       <ProductListTab />
+      <TwoColumnLayout />
       <HorizontalCardList horizontalCards={horizontalCard} />
     </div>
   );

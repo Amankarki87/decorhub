@@ -1,6 +1,19 @@
 import type { Metadata } from "next";
 import { Inter, Rubik } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
+
+const lovelyn = localFont({
+  src: "./fonts/Lovelyn.woff2",
+  display: "swap",
+  variable: "--font-lovelyn",
+});
+
+const wallington = localFont({
+  src: "./fonts/Wallington-Pro.woff2",
+  display: "swap",
+  variable: "--font-wallington",
+});
 
 const inter = Inter({
   subsets: ["latin"],
@@ -29,7 +42,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${rubik.variable} antialiased font-inter`}
+        className={`${inter.variable} ${rubik.variable} ${lovelyn.variable} ${wallington.variable} antialiased font-inter`}
       >
         <main className="container mx-auto">{children}</main>
       </body>

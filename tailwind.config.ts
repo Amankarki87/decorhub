@@ -12,6 +12,7 @@ export default {
       colors: {
         "gray-primary": "var(--gray-primary)",
         "gray-secondary": "var(--gray-secondary)",
+        "gray-tertiary": "#4f4f4f",
         "white-smoke": "var(--white-smoke)",
         "gray-fiftieth-shade": "var(--gray-fiftieth-shade)",
         "electric-orange": "var(--electric-orange)",
@@ -62,8 +63,10 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        inter: ["var(--font-sans)"],
+        inter: ["var(--font-inter)"],
         rubik: ["var(--font-rubik)"],
+        lovelyn: ["var(--font-lovelyn)"],
+        wallington: ["var(--font-wallington)"],
       },
     },
   },

@@ -10,7 +10,7 @@ export default function ProductListTab() {
       className="max-w-[1260px] w-full mx-auto px-4 sm:px-0 md:px-6 xl:px-0 pt-[60px]"
     >
       <TabsList className="flex items-center bg-none! w-full h-full justify-between flex-col md:flex-row">
-        <div className="flex flex-col items-start gap-4 mb-3">
+        <div className="flex flex-col items-center md:items-start gap-4 mb-3">
           <span className="capitalize px-6 py-1 rounded-2xl bg-white-smoke text-lg font-medium text-electric-orange">
             Check our product
           </span>
