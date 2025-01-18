@@ -5,7 +5,7 @@ import { featuredProducts1, featuredProducts2 } from "@/constant/products";
 
 export default function Home() {
   return (
-    <>
+    <div className="pt-24 md:pt-32">
       <Hero />
       <FeaturedProducts products={featuredProducts1} />
       <OurJourney />
@@ -13,6 +13,6 @@ export default function Home() {
         products={featuredProducts2}
         className="pb-16 sm:pb-20 pt-0 sm:pt-0 lg:pt-0"
       />
-    </>
+    </div>
   );
 }

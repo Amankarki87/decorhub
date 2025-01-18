@@ -33,7 +33,7 @@ export default function RootLayout({
         className={`${montserrat.variable} ${openSans.variable} antialiased font-open-sans`}
       >
         <Header />
-        <main className="w-full pt-24 bg-white md:pt-32">{children}</main>
+        <main className="w-full bg-white">{children}</main>
         <OfficeInfo />
         <Footer />
       </body>

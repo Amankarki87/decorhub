@@ -5,7 +5,7 @@ export const navbarItems = [
   },
   {
     label: "About us",
-    link: "/about-us",
+    link: "/about",
   },
   {
     label: "Contact us",

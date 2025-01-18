@@ -25,14 +25,14 @@ export const featuredProducts1 = [
 
 export const featuredProducts2 = [
   {
-    title: "Bamboo Wood Venner",
-    link: "/products/bamboo-wood-venner",
-    src: BambooWoodVenner2,
-  },
-  {
     title: "WPC Louvers",
     link: "/products/wpc-louvers",
     src: WPCLouvers,
+  },
+  {
+    title: "Bamboo Wood Venner",
+    link: "/products/bamboo-wood-venner",
+    src: BambooWoodVenner2,
   },
   {
     title: "PVC Panel",
