@@ -14,9 +14,9 @@ export default function OfficeInfo() {
               {officeInfo.subheading}
             </p>
           </div>
-          <ul className="flex flex-col items-center justify-between gap-5 md:flex-row">
+          <ul className="flex flex-col items-start justify-between gap-5 md:flex-row">
             {officeInfo.infoList.map((item, idx) => (
-              <li key={idx} className="mt-4 flex items-center w-full">
+              <li key={idx} className="mt-4 flex items-start w-full">
                 <div className="inline-flex items-center justify-center w-10 h-10 text-white bg-primary rounded-full shrink-0">
                   <span className="text-base text-white inline-block size-fit">
                     <item.icon />
@@ -26,9 +26,33 @@ export default function OfficeInfo() {
                   <h3 className="font-semibold text-white/70 capitalize">
                     {item.title}
                   </h3>
-                  <p className="mt-1 text-sm font-normal text-white/70">
-                    {item.paragraph}
-                  </p>
+                  {item.paragraph && (
+                    <p className="mt-1 text-sm font-normal text-white/70 whitespace-pre-line leading-7">
+                      {item.paragraph}
+                    </p>
+                  )}
+                  {item.paragraph2 && (
+                    <p className="mt-1 text-sm font-normal text-white/70 whitespace-pre-line leading-7">
+                      {item.paragraph2}
+                    </p>
+                  )}
+
+                  {item.mail && (
+                    <a
+                      className="mt-1 text-sm font-normal text-white/70 whitespace-pre-line block leading-7"
+                      href={`mailto:${item.mail}`}
+                    >
+                      {item.mail}
+                    </a>
+                  )}
+                  {item.phone && (
+                    <a
+                      className="mt-1 text-sm font-normal text-white/70 whitespace-pre-line block leading-7"
+                      href={`tel:${item.phone}`}
+                    >
+                      {item.phone}
+                    </a>
+                  )}
                 </div>
               </li>
             ))}

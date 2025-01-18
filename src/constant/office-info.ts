@@ -12,12 +12,14 @@ export const officeInfo = {
     {
       icon: MapPin,
       title: "Our Address",
-      paragraph: "456 Interior Ave, Design City, 67890",
+      paragraph: "Near Eye Hospital, Lokanthali, Kathmandu",
+      paragraph2: "Sai Baba Marg , Biratnagar",
     },
     {
       icon: Phone,
       title: "Contact Us",
-      paragraph: "+977-9812345678",
+      phone: "+977-9843660749",
+      mail: "info@decorhub.com.np",
     },
   ],
 };
