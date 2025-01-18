@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Montserrat, Open_Sans } from "next/font/google";
 import Header from "@/components/header";
 import "./globals.css";
+import OfficeInfo from "@/components/office-info";
+import Footer from "@/components/footer";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -31,9 +33,9 @@ export default function RootLayout({
         className={`${montserrat.variable} ${openSans.variable} antialiased font-open-sans`}
       >
         <Header />
-        <main className="w-full px-6 pt-24 bg-white md:px-8 md:pt-32">
-          {children}
-        </main>
+        <main className="w-full pt-24 bg-white md:pt-32">{children}</main>
+        <OfficeInfo />
+        <Footer />
       </body>
     </html>
   );
