@@ -5,7 +5,7 @@ import WallFabrics from "../../public/featured-products/wall-fabrics.jpg";
 import WPCLouvers from "../../public/featured-products/wpc-louvers.jpg";
 import PVCPanel from "../../public/featured-products/pvc-panel.jpg";
 
-export const featuredProducts1 = [
+export const featuredProducts = [
   {
     title: "Bamboo Wood Venner",
     link: "/products/bamboo-wood-venner",
@@ -21,9 +21,6 @@ export const featuredProducts1 = [
     link: "/products/wall-fabrics",
     src: WallFabrics,
   },
-];
-
-export const featuredProducts2 = [
   {
     title: "WPC Louvers",
     link: "/products/wpc-louvers",
@@ -40,3 +37,21 @@ export const featuredProducts2 = [
     src: PVCPanel,
   },
 ];
+
+// export const featuredProducts2 = [
+//   {
+//     title: "WPC Louvers",
+//     link: "/products/wpc-louvers",
+//     src: WPCLouvers,
+//   },
+//   {
+//     title: "Bamboo Wood Venner",
+//     link: "/products/bamboo-wood-venner",
+//     src: BambooWoodVenner2,
+//   },
+//   {
+//     title: "PVC Panel",
+//     link: "/products/pvc-panel",
+//     src: PVCPanel,
+//   },
+// ];
