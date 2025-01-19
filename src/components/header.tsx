@@ -1,12 +1,12 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import DecorhubLogo from "./.././../public/logo.png";
 import Image from "next/image";
 import Navbar from "./navbar";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { MoveRight } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { DecorhubLogo } from "@/constant/office-info";
 
 export default function Header() {
   const [isVisible, setIsVisible] = useState(true);
@@ -39,7 +39,7 @@ export default function Header() {
   return (
     <header
       className={cn(
-        "fixed top-5 z-40 left-8 right-8 rounded-3xl rounded-br-3xl rounded-bl-3xl md:border md:border-black/10 md:rounded-full bg-white/80 backdrop-blur-xl md:px-6 md:pl-8 md:transition-all max-w-[1376px] m-auto transition-transform duration-300",
+        "fixed top-5 z-40 left-8 right-8 rounded-3xl rounded-br-3xl rounded-bl-3xl md:border md:border-black/10 md:rounded-full bg-white/80 backdrop-blur-xl md:px-6 md:pl-8 md:transition-all max-w-[1376px] m-auto transition-transform duration-300 md:duration-300",
         {
           "-translate-y-0": isVisible,
           "-translate-y-28": !isVisible,

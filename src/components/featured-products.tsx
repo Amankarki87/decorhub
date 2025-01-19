@@ -29,9 +29,9 @@ export default function FeaturedProducts({
     >
       <div className="max-w-7xl mx-auto rounded-lg px-6 md:px-8">
         <h4 className="mb-12 text-3xl font-bold tracking-tight text-secondary sm:text-4xl font-montserrat capitalize">
-          Discover our product
+          Discover our products
         </h4>
-        <div className="grid grid-cols-1 gap-y-12 gap-4 text-center rounded-lg sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 sm:text-left">
+        <div className="grid grid-cols-1 gap-y-12 gap-6 text-center rounded-lg sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 sm:text-left">
           {products.map((product, idx) => (
             <Link key={idx} href={product.link}>
               <div className="relative overflow-hidden group">

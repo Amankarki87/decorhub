@@ -5,14 +5,14 @@ export default function OurJourney() {
   return (
     <section className="relative isolate overflow-hidden bg-white py-16 sm:py-20">
       <div className="mx-auto max-w-7xl space-y-10 px-6 md:px-8">
-        <div className="mx-auto max-w-2xl lg:mx-0">
+        <div className="">
           <h4 className="text-lg font-semibold leading-8 tracking-tight text-primary capitalize">
             Our journey
           </h4>
           <h4 className="mt-2 text-3xl font-bold tracking-tight text-secondary sm:text-4xl font-montserrat">
             {ourJourney.heading}
           </h4>
-          <p className="mt-6 text-xl leading-8 text-gray-700">
+          <p className="mt-6 text-xl max-w-2xl leading-8 text-gray-700">
             {ourJourney.paragraph}
           </p>
         </div>

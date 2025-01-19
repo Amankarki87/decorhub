@@ -5,18 +5,18 @@ import React from "react";
 
 export default function Welcome() {
   return (
-    <section className="relative isolate bg-secondary overflow-hiddenpy-24 sm:py-32">
+    <section className="relative isolate bg-secondary overflow-hidden py-24 sm:py-32">
       <Image
         alt=""
         src={HeroImage}
         className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center opacity-20"
       />
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto lg:mx-0">
-          <h2 className="text-4xl font-bold tracking-tight text-primary sm:text-6xl font-montserrat">
+        <div className="mx-auto max-w-2xl lg:mx-0">
+          <h2 className="text-4xl font-semibold tracking-tight text-primary sm:text-6xl font-montserrat">
             {welcomeContent.heading}
           </h2>
-          <p className="mt-6 text-lg leading-8 max-w-2xl text-gray-300">
+          <p className="mt-6 text-lg leading-8 text-gray-300">
             {welcomeContent.paragraph}
           </p>
         </div>
