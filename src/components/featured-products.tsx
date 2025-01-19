@@ -22,10 +22,7 @@ export default function FeaturedProducts({
 }: IFeaturedProductsProps) {
   return (
     <section
-      className={cn(
-        "pt-10 bg-white dark:bg-slate-800 sm:pt-16 lg:pt-20",
-        className
-      )}
+      className={cn(" bg-white dark:bg-slate-800 py-16 sm:py-20", className)}
     >
       <div className="max-w-7xl mx-auto rounded-lg px-6 md:px-8">
         <h4 className="mb-12 text-3xl font-bold tracking-tight text-secondary sm:text-4xl font-montserrat capitalize">

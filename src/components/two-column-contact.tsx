@@ -1,21 +1,9 @@
-"use client";
-import { Mail, MapPin, Phone, Send } from "lucide-react";
-import React, { useState } from "react";
+import { Mail, MapPin, Phone } from "lucide-react";
+import ContactForm from "./contact-from";
 
 export default function TwoColumContact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted:", formData);
-  };
   return (
-    <section className=" bg-gray-50 py-0 md:py-20">
+    <section className=" bg-gray-50 py-0 sm:py-20">
       <div className="max-w-7xl mx-auto px-0 md:px-8">
         <div className=" bg-white md:rounded-2xl shadow-lg overflow-hidden">
           <div className="grid md:grid-cols-2 gap-0">
@@ -63,72 +51,7 @@ export default function TwoColumContact() {
               <h2 className="text-3xl font-bold mb-8 text-gray-800">
                 Send us a Message
               </h2>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label
-                    htmlFor="name"
-                    className="block text-sm font-medium text-gray-700 mb-1"
-                  >
-                    Full Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    value={formData.name}
-                    onChange={(e) =>
-                      setFormData({ ...formData, name: e.target.value })
-                    }
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="email"
-                    className="block text-sm font-medium text-gray-700 mb-1"
-                  >
-                    Email Address
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    value={formData.email}
-                    onChange={(e) =>
-                      setFormData({ ...formData, email: e.target.value })
-                    }
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="message"
-                    className="block text-sm font-medium text-gray-700 mb-1"
-                  >
-                    Your Message
-                  </label>
-                  <textarea
-                    id="message"
-                    value={formData.message}
-                    onChange={(e) =>
-                      setFormData({ ...formData, message: e.target.value })
-                    }
-                    rows={4}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition"
-                    required
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full bg-primary hover:bg-primary/80 text-secondary font-medium py-3 px-6 rounded-lg transition duration-200 flex items-center justify-center space-x-2"
-                >
-                  <span>Send Message</span>
-                  <Send className="w-4 h-4" />
-                </button>
-              </form>
+              <ContactForm />
             </div>
           </div>
         </div>
