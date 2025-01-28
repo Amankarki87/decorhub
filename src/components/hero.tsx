@@ -20,7 +20,7 @@ export default function Hero() {
           </div>
           <Button
             asChild
-            className="w-fit h-12 px-6 group text-sm capitalize text-white font-semibold rounded-full hover:transition-all hover:duration-300 md:px-8 md:h-14 md:text-base relative"
+            className="w-fit h-12 px-6 group text-sm capitalize text-secondary font-semibold rounded-full hover:transition-all hover:duration-300 md:px-8 md:h-14 md:text-base relative"
           >
             <Link href="/">
               Explore our collection{" "}

@@ -1,4 +1,5 @@
 import { Clock, MapPin, Phone } from "lucide-react";
+import DecorhubLogo from "../../public/logo.png";
 
 export const officeInfo = {
   heading: "Connect with Decorhub",
@@ -7,17 +8,21 @@ export const officeInfo = {
     {
       icon: Clock,
       title: "Office hours",
-      paragraph: "Sunday-Monday 9:00 am to 6:00 pm",
+      paragraph: "Sunday-Friday 9:00 am to 6:00 pm",
     },
     {
       icon: MapPin,
       title: "Our Address",
-      paragraph: "456 Interior Ave, Design City, 67890",
+      paragraph: "Main Office: Near Eye Hospital, Lokanthali, Kathmandu",
+      paragraph2: "Branch Office: Sai Baba Marg , Biratnagar",
     },
     {
       icon: Phone,
       title: "Contact Us",
-      paragraph: "+977-9812345678",
+      phone: "+977-9843660749",
+      mail: "info@decorhub.com.np",
     },
   ],
 };
+
+export { DecorhubLogo };
